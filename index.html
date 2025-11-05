@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soni’s Life Care</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Top Marquee -->
+    <div class="top-bar">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+            मसाज चेयर की कीमत 100 रुपये प्रति 10 मिनट है। यदि आप इसे हर दिन 30 दिनों तक उपयोग करें... | 💆 The massage
+            chair costs ₹100 for 10 minutes. If you use it every day for 30 days...
+        </marquee>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./images/logo-3.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Massage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+                <!-- Buttons Triggering Modals -->
+                <button class="btn btn-demo" data-bs-toggle="modal" data-bs-target="#bookDemoModal">
+                    💆‍♀️ Book Your Free Demo
+                </button>
+                <button class="btn btn-outline ms-2" data-bs-toggle="modal" data-bs-target="#buyChairModal">
+                    🛒 Buy Massage Chair
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sub Menu -->
+    <div class="sub-menu">
+        <a href="#">Best Sellers</a>
+        <a href="#">Leg & Foot Massagers</a>
+        <a href="#">Massage Chairs</a>
+        <a href="#">Back & Neck Massagers</a>
+        <a href="#">Weight Loss</a>
+        <a href="#">Bed Massage</a>
+    </div>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url('./images/banner.png');">
+                <div class="hero-overlay"></div>
+                <div class="carousel-caption">
+                    <h1 class="display-2"><span>Soni’s</span><br>Life Care</h1>
+                    <p>
+                        Helpful in heart attack, paralysis, <b>knee pain, back pain, blood pressure, cancer,
+                            women-related diseases,</b>
+                        and various incurable illnesses.
+                    </p>
+                    <button class="btn-light-custom mb-3">✨ Take Your First Massage — Absolutely FREE! ✨</button>
+                    <button class="btn-primary-custom">Buy Machine Today!</button>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item"
+                style="background-image: url('https://gintell.com/cdn/shop/files/WhatsApp_Image_2025-07-11_at_15.42.30.jpg?v=1752222105&width=1920');">
+                <div class="hero-overlay"></div>
+                <div class="carousel-caption">
+                    <h1 class="display-2"><span>Relax,</span><br>Recover & Rejuvenate</h1>
+                    <p>
+                        Experience next-level comfort with our advanced massage machines. Relief for every muscle, every
+                        day.
+                    </p>
+                    <button class="btn-light-custom  mb-3">💆‍♂️ Get a Free Demo</button>
+                    <button class="btn-primary-custom">Explore Machines</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Product article section in Hindi with English buttons -->
+    <section class="product-article-section" aria-labelledby="product-article-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-article-container align-items-center">
+                        <div class="product-article-intro">
+                            <h2 id="product-article-title">प्रीमियम मसाज चेयर — आराम और थेरेपी का संगम</h2>
+                            <p>
+                                हमारी चुनी हुई <strong>ज़ीरो-ग्रेविटी</strong> और <strong>फुल बॉडी मसाज चेयर</strong>
+                                रेंज आधुनिक डिज़ाइन के साथ
+                                क्लिनिकल-ग्रेड थेरेपी का शानदार मेल है।
+                                घर की वेलनेस, काम के बाद आराम या कमर्शियल रिलैक्सेशन ज़ोन — हर मॉडल गर्दन, पीठ, पैर और
+                                टांगों के लिए
+                                टारगेटेड राहत प्रदान करता है, साथ ही कस्टमाइज़ेबल प्रोग्राम्स के साथ आता है।
+                            </p>
+
+                            <div class="product-article-features" aria-hidden="false">
+                                <span class="feature-pill">ज़ीरो-ग्रेविटी रिक्लाइन</span>
+                                <span class="feature-pill">फुल-बॉडी रोलर्स</span>
+                                <span class="feature-pill">एडजस्टेबल इंटेंसिटी</span>
+                                <span class="feature-pill">फुट और कैल्फ मसाज</span>
+                                <span class="feature-pill">टिकाऊ निर्माण</span>
+                            </div>
+
+                            <div class="product-advantages mt-3">
+                                <h5 style="font-size:16px; font-weight:600; margin-bottom:8px;">मसाज चेयर के प्रमुख
+                                    फायदे:</h5>
+                                <ul style="padding-left:18px; margin-bottom:14px; color:#444; line-height:1.6;">
+                                    <li>रोज़ाना थकान और तनाव से तुरंत राहत।</li>
+                                    <li>ब्लड सर्कुलेशन में सुधार और मांसपेशियों को आराम।</li>
+                                    <li>घर बैठे स्पा जैसी थेरेपी का अनुभव।</li>
+                                    <li>लंबे समय तक टिकाऊ और उपयोग में आसान डिज़ाइन।</li>
+                                </ul>
+                            </div>
+
+                            <div class="product-article-cta">
+                                <a class="btn-demo btn-primary" href="#contact">Get a Quote</a>
+                                <a class="btn-cta btn-outline" href="#brochures">Download Brochure</a>
+                            </div>
+                        </div>
+
+                        <aside class="product-article-side" aria-labelledby="price-title">
+                            <img src="./images/logo-3.png" alt="" class="w-100 mb-4">
+                            <div id="price-title" style="font-size:14px;color:#7b7b7b;">फीचर्ड मूल्य सीमा</div>
+                            <div class="side-price">₹ 39,999 — ₹ 1,80,240</div>
+                            <div class="side-note">ईएमआई विकल्प उपलब्ध • चुनिंदा शहरों में फ्री डेमो / ट्रायल</div>
+                            <a class="btn-demo btn-primary" href="#carousel"
+                                style="display:inline-block;margin-top:6px;">View Models</a>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- 🌿 Stories of Massage Section -->
+    <section class="stories-of-massage py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+        <h2 class="fw-bold">Stories of <span class="praise">Massage</span></h2>
+        <p class="text-muted">हर स्पर्श में है सुकून — From childhood care to lifelong comfort.</p>
+        </div>
+
+        <div class="stories-wrapper">
+        <!-- Story 1 -->
+        <div class="story-card">
+            <div class="story-img">
+            <img src="https://images.agoramedia.com/wte3.0/gcms/infant-massage-722x406.jpg" alt="Stage 1">
+            </div>
+            <div class="story-text">
+            <h5 class="fw-semibold  text-golden">Stage 01 — The First Touch</h5>
+            <p class="hindi">👶 बचपन में माँ के हाथों की मालिश से ही सुकून की शुरुआत होती है।</p>
+            <p class="eng">The first touch of love begins with a mother’s gentle hands.</p>
+            </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-card">
+            <div class="story-img">
+            <img src="./images/s-2.png" alt="Stage 2">
+            </div>
+            <div class="story-text">
+            <h5 class="fw-semibold text-golden">Stage 02 — The Rhythm of Life</h5>
+            <p class="hindi">🏃‍♀️ भागदौड़ भरी ज़िन्दगी में वही मालिश राहत का पल देती है।</p>
+            <p class="eng">In the rush of life, a massage gives your body and mind a moment to breathe.</p>
+            </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+            <div class="story-img">
+            <img src="./images/s-3.png" alt="Stage 3">
+            </div>
+            <div class="story-text">
+            <h5 class="fw-semibold text-golden">Stage 03 — Care That Travels</h5>
+            <p class="hindi">💌 दूरी चाहे जितनी हो, प्यार और देखभाल हर दिन पहुँचती है।</p>
+            <p class="eng">Even from miles away, care can still be felt — one massage at a time.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="product-carousel-section py-5">
+        <div class="container text-center">
+            <h2 class="section-title mb-4">Machine For <span class="praise">Sale & Therapy</span></h2>
+
+            <div class="owl-carousel product-carousel owl-theme">
+                <!-- Product 1 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="./images/m-1.png" alt="Indulge Massager Chair MC45" class="product-img">
+                        <h5>Indulge Massager Chair MC45</h5>
+                        <p class="review">Review <span>★★★★★</span></p>
+                        <p class="desc">“zero gravity” full body luxury style chair</p>
+                        <p class="price"><del>₹1,80,240</del> <span>₹1,80,240</span></p>
+                        <div class="btn-group">
+                            <a href="#" class="btn-buy ">Buy Now</a>
+                            <a href="#" class="btn-msg">Get Massage</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="./images/m-2.png" alt="Indulge PMC-2000 Massage Chair" class="product-img">
+                        <h5>Indulge PMC-2000 Massage Chair</h5>
+                        <p class="review">Review <span>★★★★★</span></p>
+                        <p class="desc">“zero gravity” full body luxury style chair</p>
+                        <p class="price"><del>₹1,80,240</del> <span>₹1,80,240</span></p>
+                        <div class="btn-group">
+                            <a href="#" class="btn-buy">Buy Now</a>
+                            <a href="#" class="btn-msg">Get Massage</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="./images/m-3.png" alt="JSB MZ24 Zero Gravity Massage Chair" class="product-img">
+                        <h5>JSB MZ24 Zero Gravity Massage Chair</h5>
+                        <p class="review">Review <span>★★★★★</span></p>
+                        <p class="desc">“zero gravity” full body luxury style chair</p>
+                        <p class="price"><del>₹1,80,240</del> <span>₹1,80,240</span></p>
+                        <div class="btn-group">
+                            <a href="#" class="btn-buy">Buy Now</a>
+                            <a href="#" class="btn-msg">Get Massage</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="./images/m-4.png" alt="Cult BlissGrey Massage Chair" class="product-img">
+                        <h5>Cult BlissGrey Massage Chair</h5>
+                        <p class="review">Review <span>★★★★★</span></p>
+                        <p class="desc">“zero gravity” full body luxury style chair</p>
+                        <p class="price"><del>₹1,80,240</del> <span>₹39,999</span></p>
+                        <div class="btn-group">
+                            <a href="#" class="btn-buy">Buy Now</a>
+                            <a href="#" class="btn-msg">Get Massage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="consultation-section text-center rounded-0">
+        <div class="container">
+            <h2 class="consultation-title">Get a Free Expert Consultation Today!</h2>
+            <button class="consultation-btn">
+                <i class="fas fa-headset"></i> Schedule a Call
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Massage Benefits Section -->
+    <section class="benefits-section py-5">
+        <div class="container">
+            <div class="row g-0">
+                <!-- Image 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="./images/b-1.png" alt="Massage Benefits" class="img-fluid w-100 h-100 object-cover">
+                </div>
+
+                <!-- Text 1 -->
+                <div class="col-md-4 col-sm-6 benefits-box teal-bg">
+                    <h3>मसाज चेयर बेड के लाभ</h3>
+                    <p>
+                        हाईडियेशन, शरीर में दर्द, तनावयुक्त जीवन जी रहे लोगों का भी स्ट्रेस कम करे।<br>
+                        नींद में सम्पूर्ण आराम एवं लाभ प्रदान करने में सहायक उपकरण।
+                    </p>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="./images/b-2.png" alt="Runner" class="img-fluid w-100 h-100 object-cover">
+                </div>
+
+                <!-- Text 2 -->
+                <div class="col-md-4 col-sm-6 benefits-box lightblue-bg">
+                    <h3>मसाज बेड के लाभ</h3>
+                    <p>
+                        हार्ट अटैक, लकवा, घुटनों का दर्द, कमर दर्द, ब्लड प्रेशर, कैंसर, सर्दी के मरीजों,
+                        थाइरोइड के सामान्य रोगों एवं असाध्य रोगों में लाभकारी।
+                    </p>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="./images/b-3.png" alt="Shoulder Pain" class="img-fluid w-100 h-100 object-cover">
+                </div>
+
+                <!-- Text 3 -->
+                <div class="col-md-4 col-sm-6 benefits-box purple-bg">
+                    <h3>फुट थेरेपी चेयर के लाभ</h3>
+                    <p>
+                        थकान, पैरों में झनझन, जोड़ों का दर्द, नलों में फड़कन, ब्लड सर्कुलेशन में सुधार तथा डायबिटीज में
+                        सहायक।<br>
+                        पैरों की समस्याओं में यह अत्यंत लाभदायक है।
+                    </p>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="./images/b-4.png" alt="Massage Chair" class="img-fluid w-100 h-100 object-cover">
+                </div>
+
+                <!-- Text 4 -->
+                <div class="col-md-4 col-sm-6 benefits-box darkgreen-bg">
+                    <h3>Eagle Healthmate</h3>
+                    <p>
+                        थकावट और तनाव से राहत।<br>
+                        शरीर के दर्द, कमर दर्द और घुटनों के दर्द में आराम।<br>
+                        ब्लड सर्कुलेशन में सुधार।<br>
+                        नसों की पकड़ को दूर कर रक्त प्रवाह में सहायक।<br>
+                        नींद में सुकून और मानसिक शांति।<br>
+                        डायबिटीज या ब्लड प्रेशर की समस्याओं में लाभदायक।
+                    </p>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <img src="./images/b-5.png" alt="Weightloss" class="img-fluid w-100 h-100 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Left Content -->
+                <div class="col-md-6">
+                    <div class="who-text">
+                        <h4 class="who-subtitle">Who <span class="praise">We Are</span></h4>
+                        <h2 class=" display-5 fw-bold ">Presented By <span class="text-golden">Kishor Kumar Soni Ji</span></h2>
+                        <p class="who-desc">
+                            In addition to his involvement with <strong>Kishor Kumar Soni Ji</strong>,
+                            he has also ventured into healthcare entrepreneurship.
+                        </p>
+                        <p class="who-desc">
+                            He started <strong>Soni's Life Care</strong>, showing his interest in expanding
+                            beyond jewellery into life care or health-related services.
+                        </p>
+
+                        <div class="who-buttons mt-3">
+                            <a href="#" class="btn btn-demo">Visit Sonu’s Life Care</a>
+                            <!-- <a href="#" class="btn-visit btn-dark"></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-md-6 text-center">
+                    <div class="who-img-wrapper">
+                        <div class="img-bg"></div>
+                        <img src="./images/man.png" alt="Kishor Kumar Soni Ji" class="who-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section class="who-we-are-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Left Content -->
+                <div class="col-md-12">
+                    <div class="who-text text-center">
+                        <h2 class="section-title mb-4">Basic Feature of <span class="praise"> Massager Chair</span></h2>
+
+                        <img src="./images/m-globe.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Instructions Section -->
+    <section class="safety-section py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <!-- Box 1 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="safety-box red">
+                        <h5>Children below 7 years of age should not use the massage bed.</h5>
+                        <p>सात वर्ष से कम उम्र के बच्चे उपयोग न करें।</p>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="safety-box purple">
+                        <h5>Pregnant women should not use the massage bed.</h5>
+                        <p>गर्भवती महिलाओं को इसका उपयोग नहीं करना चाहिए।</p>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="safety-box orange">
+                        <h5>Do not take massage over the rod or mechanical parts of the bed.</h5>
+                        <p>रॉड वाले हिस्से में मसाज न करें।</p>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="safety-box green">
+                        <h5>People with a pacemaker can take the massage safely.</h5>
+                        <p>पेसमेकर वाले व्यक्ति मसाज ले सकते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits of Massage Bed Section -->
+    <section class="massage-benefits py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <!-- Left Content -->
+                <div class="col-md-7">
+                    <div class="benefits-content">
+                        <h3>मसाज बेड के लाभ</h3>
+                        <p>
+                            हार्ट अटैक, लकवा, घुटनों का दर्द, कमर दर्द, ब्लड प्रेशर, कैप्सर नसों से संबंधित रोग,
+                            हिलने की क्षमता नहीं रखने वाले अथवा अशक्त व्यक्ति जो एक जगह बैठे रहते हैं, उनकी
+                            नसों को खोलने, उन्हें सक्रिय एवं प्राकृतिक ऊर्जा के सहारे दिलाने में यह सहायता करता है।
+                            मानव शरीर में निष्क्रिय नसें जब सुचारू रूप से काम करने लगती हैं — तब शरीर को संपूर्ण
+                            रूप से एर्जेटिक (ऊर्जा) प्राप्त होती है।
+                        </p>
+
+                        <p class="note-hindi">
+                            <strong>नोट:</strong> मसाज बेड या मसाज चेयर का निर्माण करने वाली कंपनी का दावा
+                            किसी भी रोग को ठीक करने का नहीं है, यह केवल बीमारियों के लक्षण कम करने में सहायक है।
+                        </p>
+
+                        <h2 class="mb-3">Benefits of <span class="praise">Massage Bed</span></h2>
+                        <p><strong>Heart attack, paralysis, knee pain, back pain, blood pressure, vein-related
+                                disorders,</strong>
+                            and women’s health or chronic diseases may find beneficial relief through massage bed
+                            therapy.
+                            It can help people who are unable to walk properly by activating blocked or inactive nerves
+                            and
+                            restoring their natural energy flow. When all inactive nerves in the human body function
+                            smoothly,
+                            it may provide complete relief from cervical and similar problems.</p>
+
+                        <p class="note">
+                            <strong>Note:</strong> The massage chair or massage bed manufacturer does not claim to cure
+                            any disease.
+                            It may only help in reducing symptoms and providing relaxation.
+                        </p>
+
+                        <hr class="my-4" style="width: 60px; border: 2px solid #eab308;">
+
+
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-md-5 text-center">
+                    <img src="images/muscle.png" alt="Human Muscular System" class="img-fluid muscle-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Find Our Location Section -->
+    <section class="find-location py-5">
+        <div class="container text-center">
+            <p class="locate-text">Locate Us</p>
+            <h2 class="section-title mb-4">Find Our Location</h2>
+
+            <div class="location-map position-relative">
+                <img src="images/map.png" alt="World Map" class="img-fluid map-img">
+
+                <!-- Location Pin Example -->
+                <div class="map-pin" style="top: 55%; left: 72%;">
+                    <div class="pin-info shadow">
+                        <img src="images/logo-2.jpg" alt="Soni's Life Care" class="pin-logo">
+                        <p><strong>Soni’s Life Care</strong><br>Shankar Talab, Beside of SBI Bank</p>
+                    </div>
+                    <span class="pulse"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Brochure Section -->
+    <section class="consultation-section rounded-0  text-center py-5">
+        <div class="container">
+            <h3 class="mb-3 fw-bold">Download All Therapy<br>Broacher & Docs</h3>
+            <a href="#" class="btn btn-demo">Download Brocher</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- About -->
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-2">About Soni’s Life Care</h6>
+                    <p class="small">
+                        In addition to his involvement with
+                        <a href="#" class="link-purple">Kishor Jewellers</a>,
+                        he has also ventured into healthcare entrepreneurship.
+                    </p>
+
+                    <!-- Contact Info -->
+                    <div class="contact-info mt-3 small">
+                        <p><i class="fa-solid fa-location-dot"></i> Shankar Talab, Beside SBI Bank, Rewa (M.P.)</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 99999 88888</p>
+                        <p><i class="fa-solid fa-envelope"></i> info@sonilifecare.com</p>
+                        <p><i class="fa-solid fa-cart-shopping"></i> Sales: sales@sonilifecare.com</p>
+                        <p><i class="fa-solid fa-heart-pulse"></i> Therapy Support: therapy@sonilifecare.com</p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="col-md-2 col-6">
+                    <h6 class="fw-bold mb-3">Company</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div class="col-md-3 col-6">
+                    <h6 class="fw-bold mb-3">Help</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="mt-5">
+            <div class="text-center small text-muted mt-3">
+                © 2025 Soni’s Life Care. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- 🎯 Book Demo Modal -->
+    <div class="modal fade" id="bookDemoModal" tabindex="-1" aria-labelledby="bookDemoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content demo-modal border-0 shadow-sm rounded-4">
+                <div class="modal-header border-0 text-center">
+                    <h5 class="modal-title w-100 fw-semibold" id="bookDemoLabel">💆‍♀️ Book Your Free Massage Demo</h5>
+                    <button type="button" class="btn-close position-absolute end-0 me-3 mt-2"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body px-4 pb-4">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg demo-input" placeholder="Full Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-lg demo-input" placeholder="Phone Number"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select form-select-lg demo-select" required>
+                                <option value="" disabled selected>Select Therapy Type</option>
+                                <option>Full Body Massage</option>
+                                <option>Foot & Leg Massage</option>
+                                <option>Neck & Shoulder Therapy</option>
+                                <option>Back Relaxation Session</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <input type="date" class="form-control form-control-lg demo-input" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="text" class="form-control form-control-lg demo-input"
+                                placeholder="City / Branch Name" required>
+                        </div>
+                        <button type="submit" class="btn btn-demo w-100 py-2  fw-semibold">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Minimalist Purchase Modal -->
+    <div class="modal fade" id="buyChairModal" tabindex="-1" aria-labelledby="buyChairLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content buy-modal border-0 shadow-sm rounded-4">
+                <div class="modal-header border-0 text-center">
+                    <h5 class="modal-title w-100 fw-semibold" id="buyChairLabel">🛋️ Buy Massage Chair</h5>
+                    <button type="button" class="btn-close position-absolute end-0 me-3 mt-2"
+                        data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body px-4 pb-4">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg buy-input" placeholder="Full Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-lg buy-input" placeholder="Phone Number"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <select class="form-select form-select-lg buy-select" required>
+                                <option value="" disabled selected>Select Massage Chair Model</option>
+                                <option>Soni's Classic</option>
+                                <option>Soni's Deluxe</option>
+                                <option>Soni's Premium</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn w-100 py-2 buy-btn fw-semibold">Proceed to Purchase</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.product-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            dots: false,
+            nav: true,
+            navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
+            responsive: {
+                0: { items: 1 },
+                576: { items: 2 },
+                992: { items: 3 },
+                1200: { items: 4 }
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Shrink logo on scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
