@@ -73,49 +73,64 @@
         <a href="#">Bed Massage</a>
     </div>
 
-    <!-- Hero Carousel -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url('./images/banner.png');">
-                <div class="hero-overlay"></div>
-                <div class="carousel-caption">
-                    <h1 class="display-2"><span>Soni’s</span><br>Life Care</h1>
-                    <p>
-                        Helpful in heart attack, paralysis, <b>knee pain, back pain, blood pressure, cancer,
-                            women-related diseases,</b>
-                        and various incurable illnesses.
-                    </p>
-                    <button class="btn-light-custom mb-3">✨ Take Your First Massage — Absolutely FREE! ✨</button>
-                    <button class="btn-primary-custom">Buy Machine Today!</button>
-                </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-item"
-                style="background-image: url('https://gintell.com/cdn/shop/files/WhatsApp_Image_2025-07-11_at_15.42.30.jpg?v=1752222105&width=1920');">
-                <div class="hero-overlay"></div>
-                <div class="carousel-caption">
-                    <h1 class="display-2"><span>Relax,</span><br>Recover & Rejuvenate</h1>
-                    <p>
-                        Experience next-level comfort with our advanced massage machines. Relief for every muscle, every
-                        day.
-                    </p>
-                    <button class="btn-light-custom  mb-3">💆‍♂️ Get a Free Demo</button>
-                    <button class="btn-primary-custom">Explore Machines</button>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+   <!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active" style="background-image: url('./images/banner.png'); background-size: cover; background-position: center; height: 90vh;">
+      <div class="hero-overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-2"><span>Soni’s</span><br>Life Care</h1>
+        <p>
+          Helpful in heart attack, paralysis, <b>knee pain, back pain, blood pressure, cancer,
+            women-related diseases,</b> and various incurable illnesses.
+        </p>
+        <button class="btn-light-custom mb-3"  data-bs-toggle="modal" data-bs-target="#bookDemoModal">✨ Take Your First Massage — Absolutely FREE! ✨</button>
+        <button class="btn-primary-custom"  data-bs-toggle="modal" data-bs-target="#buyChairModal">Buy Machine Today!</button>
+      </div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item" style="background-image: url('https://gintell.com/cdn/shop/files/WhatsApp_Image_2025-07-11_at_15.42.30.jpg?v=1752222105&width=1920'); background-size: cover; background-position: center; height: 90vh;">
+      <div class="hero-overlay"></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h1 class="display-2"><span>Relax,</span><br>Recover & Rejuvenate</h1>
+        <p>
+          Experience next-level comfort with our advanced massage machines. Relief for every muscle, every day.
+        </p>
+        <button class="btn-light-custom mb-3">💆‍♂️ Get a Free Demo</button>
+        <button class="btn-primary-custom">Explore Machines</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+<div class="container my-3 mobile-sec">
+    <div class="row">
+        <div class="col-md-12">
+           <div class="text-center">
+              <h1 class="display-2"><span class="text-golden">Soni’s</span><br> <span class="text-green"> Life Care</span></h1>
+        <p>
+          Helpful in heart attack, paralysis, <b>knee pain, back pain, blood pressure, cancer,
+            women-related diseases,</b> and various incurable illnesses.
+        </p>
+        <button class="btn-light-custom mb-3"  data-bs-toggle="modal" data-bs-target="#bookDemoModal">✨ Take Your First Massage — Absolutely FREE! ✨</button>
+        <button class="btn-primary-custom"  data-bs-toggle="modal" data-bs-target="#buyChairModal">Buy Machine Today!</button>
+           </div>
+        </div>
+    </div>
+</div>
+
+
 
     <!-- Product article section in Hindi with English buttons -->
     <section class="product-article-section" aria-labelledby="product-article-title">
