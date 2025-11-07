@@ -80,42 +80,27 @@
     }
 
     /* Carousel */
-    .carousel-item {
-      height: 85vh;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-    }
+     .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.7);
+  }
 
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 40, 50, 0.55);
-    }
+  .carousel-indicators .active {
+    background-color: #bf892e; /* golden highlight */
+  }
 
-    .carousel-caption {
-      position: absolute;
-      top: 20%;
-      left: 8%;
-      text-align: left;
-      z-index: 2;
-    }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1) brightness(1.5);
+  }
 
-    .carousel-caption h1 {
-      /* font-size: 3rem; */
-      font-weight: 800;
-      color: #fff;
+  /* @media (max-width: 768px) {
+    #heroCarousel img {
+      height: 60vh;
     }
-
-    /* Gradient title */
-    .carousel-caption h1 span {
-      background: conic-gradient(from 180deg at 50% 50%, #BF892E 37%, #FBED9B 72%, #FBED9B 91%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  } */
 
     /* Overlay styling */
   .hero-overlay {
@@ -135,9 +120,9 @@
 
   /* Responsive height adjustment */
   @media (max-width: 768px) {
-    .carousel-item {
-      height: 23vh !important; /* smaller height for mobile */
-    }
+    /* .carousel-item {
+      height: 23vh !important; 
+    } */
   }
 
   /* Buttons (optional custom styles if you’re using them) */
@@ -1058,3 +1043,27 @@
         display: block;
     }
 }
+
+
+  .video-card {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+  }
+
+  .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  iframe {
+    border: none;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 768px) {
+    iframe {
+      height: 120px;
+    }
+  }
